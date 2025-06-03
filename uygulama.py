@@ -4,7 +4,7 @@ from gerisi360 import generate_consent
 
 st.title("Consent Message Generator")
 
-user_input = st.text_area("İsmini, bölümünü, ders kodunu, hocanı ve tonunu içeren bir metin yaz:")
+user_input = st.text_area("O istediğin dersi almak üzeresin ama önce consentini oluşturmak için birkaç bilgiye ihtiyacımız var: \nLütfen ismini, bölümünü, almak istediğin dersi ve hocasını belirt. Ardından consentinin tonunu veya dilini seç. (yalvaran, ilgili, övgülü ya da ingilizce) Gerisi bizde! \n")
 
 if st.button("Generate Consent Message"):
     course_code, combined_major, student_name, instructor_name, consent_tone = analyzing_info(user_input)
