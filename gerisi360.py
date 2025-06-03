@@ -117,11 +117,12 @@ def generate_consent(course_code, combined_major, student_name, instructor_name,
     final_message=re.sub(r" +\.",". ",final_message)
     final_message=re.sub(r" +"," ",final_message)
     final_message=re.sub(" ’ ","’",final_message)
-    final_message=f"{greeting_final},\n{final_message}\n {regard_final}"
+    
     all_chars=list(final_message)
     for i in range(len(all_chars)-2):
       if all_chars[i]==".":
         all_chars[i+2]=all_chars[i+2].upper()
     all_chars[0]=all_chars[0].upper()
     final_message="".join(all_chars)
+    final_message=f"{greeting_final},\n{final_message}\n {regard_final}"
     return final_message
