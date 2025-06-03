@@ -1,6 +1,6 @@
 import streamlit as st
 from regex360 import analyzing_info
-from generator360 import generate_consent
+from gerisi360 import generate_consent
 
 st.title("Consent Message Generator")
 
