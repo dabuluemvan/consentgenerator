@@ -91,14 +91,14 @@ def generate_consent(course_code, combined_major, student_name, instructor_name,
     final_message="".join(all_chars_before)
     final_message=f"[Greetings],\n {final_message} \n [Regards]"
     if consent_tone=="english" or consent_tone=="ingilizce":
-      with open("/content/eng_greetings.txt", "r", encoding="utf-8") as f:
+      with open("eng_greetings.txt", "r", encoding="utf-8") as f:
         greetings = f.read().splitlines()
-      with open("/content/eng_regards.txt", "r", encoding="utf-8") as f:
+      with open("eng_regards.txt", "r", encoding="utf-8") as f:
         regards = f.read().splitlines()
     else:
-      with open("/content/tr_greetings.txt", "r", encoding="utf-8") as f:
+      with open("tr_greetings.txt", "r", encoding="utf-8") as f:
         greetings = f.read().splitlines()
-      with open("/content/tr_regards.txt", "r", encoding="utf-8") as f:
+      with open("tr_regards.txt", "r", encoding="utf-8") as f:
         regards = f.read().splitlines()
     greeting_final=random.choice(greetings)
     regard_final=random.choice(regards)
