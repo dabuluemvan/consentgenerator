@@ -79,7 +79,7 @@ def generate_consent(course_code, combined_major, student_name, instructor_name,
             generated_words[i] = "konusuna"
         if generated_words[i] == "konusu" and generated_words[i+1] in accusative:
             generated_words[i] = "konusunu"
-final_message=" ".join(generated_words)
+    final_message=" ".join(generated_words)
     final_message=re.sub("\[ greetings \]","",final_message)
     final_message=re.sub("\[ regards \]","",final_message)
     final_message=re.sub("\[Instructor Name\]","",final_message)
