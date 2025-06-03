@@ -36,7 +36,7 @@ if st.button("Generate Consent Message"):
             student_name=student_name,
             instructor_name=instructor_name,
             consent_tone=consent_tone,
-            start_context=("coursecontent", "]")
+            start_context=("]", ",")
         )
         st.subheader("Generated Consent Message")
         st.write(final_message)
