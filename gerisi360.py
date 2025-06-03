@@ -89,7 +89,6 @@ def generate_consent(course_code, combined_major, student_name, instructor_name,
     all_chars_before=list(final_message)
     all_chars_before[0]=all_chars_before[0].upper()
     final_message="".join(all_chars_before)
-    final_message=f"[Greetings],\n {final_message} \n [Regards]"
     if consent_tone=="english" or consent_tone=="ingilizce":
       with open("eng_greetings.txt", "r", encoding="utf-8") as f:
         greetings = f.read().splitlines()
