@@ -80,18 +80,3 @@ def analyzing_info(user_input):
         combined_major = f"{student_class} {major_turkish}".strip()
 
     return course_code, combined_major, student_name, instructor_name, consent_tone
-
-looking_for = ["Lesson Code", "Major", "Student Name", "Instructor Name", "Consent Tone"]
-
-course_code, combined_major, student_name, instructor_name, consent_tone = analyzing_info(user_input)
-
-values = [course_code, combined_major, student_name, instructor_name, consent_tone]
-
-missing = [looking_for[i] for i, v in enumerate(values) if not v]
-print("Course Code:", course_code)
-print("Combined Major:", combined_major)
-print("Student Name:", student_name)
-print("Instructor Name:", instructor_name)
-print("Consent Tone:", consent_tone)
-break
-
