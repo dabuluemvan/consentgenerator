@@ -83,23 +83,15 @@ def analyzing_info(user_input):
 
 looking_for = ["Lesson Code", "Major", "Student Name", "Instructor Name", "Consent Tone"]
 
-while True:
-    user_input = input("O istediðin dersi almak üzeresin ama önce consentini oluþturmak için birkaç bilgiye ihtiyacýmýz var: \nLütfen ismini, bölümünü, almak istediðin dersi ve hocasýný belirt. Ardýndan consentinin tonunu veya dilini seç. (yalvaran, ilgili, övgülü ya da ingilizce) Gerisi bizde! \n")
-    course_code, combined_major, student_name, instructor_name, consent_tone = analyzing_info(user_input)
+course_code, combined_major, student_name, instructor_name, consent_tone = analyzing_info(user_input)
 
-    values = [course_code, combined_major, student_name, instructor_name, consent_tone]
+values = [course_code, combined_major, student_name, instructor_name, consent_tone]
 
-    missing = [looking_for[i] for i, v in enumerate(values) if not v]
-
-    if missing:
-        print("Eksik bilgiler: ", ', '.join(missing))
-        print("Lütfen eksik bilgileri de kullanarak yeni bir prompt giriniz.")
-        continue
-
-    print("Course Code:", course_code)
-    print("Combined Major:", combined_major)
-    print("Student Name:", student_name)
-    print("Instructor Name:", instructor_name)
-    print("Consent Tone:", consent_tone)
-    break
+missing = [looking_for[i] for i, v in enumerate(values) if not v]
+print("Course Code:", course_code)
+print("Combined Major:", combined_major)
+print("Student Name:", student_name)
+print("Instructor Name:", instructor_name)
+print("Consent Tone:", consent_tone)
+break
 
