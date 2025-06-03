@@ -1,62 +1,63 @@
-if consent_tone == "interested" or consent_tone=="ilgili":
-    with open('interested_tr.txt', 'r', encoding='utf-8') as f:
-        interested_raw = f.read()
-        tone_raw = interested_raw
-elif consent_tone == "praise" or consent_tone=="övgülü":
-    with open('praise_tr.txt', 'r', encoding='utf-8') as f:
-        praise_raw = f.read()
-        tone_raw = praise_raw
-elif consent_tone == "begging" or consent_tone=="yalvaran":
-    with open('begging_tr.txt', 'r', encoding='utf-8') as f:
-        begging_raw = f.read()
-        tone_raw = begging_raw
-elif consent_tone == "english" or consent_tone=="ingilizce":
-    with open('tone_eng.txt', 'r', encoding='utf-8') as f:
-        eng_raw = f.read()
-        tone_raw = eng_raw
-
-import nltk
-nltk.download('punkt_tab')
-nltk.download('punkt')
-
-
-tone_sents = nltk.sent_tokenize(tone_raw)
-tone_sents_tokenized = [nltk.word_tokenize(s) for s in tone_sents]
-
-tone_corpus = []
-for sentence in tone_sents_tokenized:
-  tone_corpus += ["<s>"]+sentence+["</s>"]
-
-tone_corpus = [i.lower() for i in tone_corpus]
-
-tone_trigrams = [(tone_corpus[i], tone_corpus[i+1], tone_corpus[i+2]) for i in range(len(tone_corpus)-2)]
-
-trigram_freqs = nltk.FreqDist(tone_trigrams)
-
-trigram_cfd = nltk.ConditionalFreqDist(((w1, w2,), w3) for (w1, w2, w3) in tone_trigrams)
-
-trigram_probs = nltk.ConditionalProbDist(trigram_cfd, nltk.MLEProbDist)
-
-if consent_tone == "interested" or consent_tone=="ilgili":
-    context_interested = ("coursecontent", "]")
-    tone_context = context_interested
-elif consent_tone == "praise" or consent_tone=="övgülü":
-    context_praise = ("coursecontent", "]")
-    tone_context = context_praise
-elif consent_tone == "begging" or consent_tone=="yalvaran":
-    context_begging = ("coursecontent", "]")
-    tone_context = context_begging
-elif consent_tone == "english" or consent_tone=="ingilizce":
-    context_eng = ("coursecontent", "]")
-    tone_context = context_eng
-
-probable_words = list(trigram_probs[tone_context].samples())
-word_probabilities = [trigram_probs[tone_context].prob(word) for word in probable_words]
 
 import random
 import numpy as np
 
-def generate_consent(trigram_probs, start_context=("]", ","), max_length=300):
+def generate_consent(course_code, combined_major, student_name, instructor_name, consent_tone, start_context=("coursecontent", "]"), max_length=300):
+    if consent_tone == "interested" or consent_tone=="ilgili":
+    with open('interested_tr.txt', 'r', encoding='utf-8') as f:
+        interested_raw = f.read()
+        tone_raw = interested_raw
+    elif consent_tone == "praise" or consent_tone=="övgülü":
+        with open('praise_tr.txt', 'r', encoding='utf-8') as f:
+            praise_raw = f.read()
+            tone_raw = praise_raw
+    elif consent_tone == "begging" or consent_tone=="yalvaran":
+        with open('begging_tr.txt', 'r', encoding='utf-8') as f:
+            begging_raw = f.read()
+            tone_raw = begging_raw
+    elif consent_tone == "english" or consent_tone=="ingilizce":
+        with open('tone_eng.txt', 'r', encoding='utf-8') as f:
+            eng_raw = f.read()
+            tone_raw = eng_raw
+    
+    import nltk
+    nltk.download('punkt_tab')
+    nltk.download('punkt')
+    
+    
+    tone_sents = nltk.sent_tokenize(tone_raw)
+    tone_sents_tokenized = [nltk.word_tokenize(s) for s in tone_sents]
+    
+    tone_corpus = []
+    for sentence in tone_sents_tokenized:
+      tone_corpus += ["<s>"]+sentence+["</s>"]
+    
+    tone_corpus = [i.lower() for i in tone_corpus]
+    
+    tone_trigrams = [(tone_corpus[i], tone_corpus[i+1], tone_corpus[i+2]) for i in range(len(tone_corpus)-2)]
+    
+    trigram_freqs = nltk.FreqDist(tone_trigrams)
+    
+    trigram_cfd = nltk.ConditionalFreqDist(((w1, w2,), w3) for (w1, w2, w3) in tone_trigrams)
+    
+    trigram_probs = nltk.ConditionalProbDist(trigram_cfd, nltk.MLEProbDist)
+    
+    if consent_tone == "interested" or consent_tone=="ilgili":
+        context_interested = ("coursecontent", "]")
+        tone_context = context_interested
+    elif consent_tone == "praise" or consent_tone=="övgülü":
+        context_praise = ("coursecontent", "]")
+        tone_context = context_praise
+    elif consent_tone == "begging" or consent_tone=="yalvaran":
+        context_begging = ("coursecontent", "]")
+        tone_context = context_begging
+    elif consent_tone == "english" or consent_tone=="ingilizce":
+        context_eng = ("coursecontent", "]")
+        tone_context = context_eng
+    
+    probable_words = list(trigram_probs[tone_context].samples())
+    word_probabilities = [trigram_probs[tone_context].prob(word) for word in probable_words]
+
     current_words = list(start_context)
     generated_words = []
     counter = 0
