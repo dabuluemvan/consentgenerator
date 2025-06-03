@@ -1,6 +1,6 @@
 import streamlit as st
 from regex360 import analyzing_info
-from gerisi360 import generate_consent
+from generator360 import generate_consent
 
 st.title("Consent Message Generator")
 
@@ -9,8 +9,26 @@ user_input = st.text_area("İsmini, bölümünü, ders kodunu, hocanı ve tonunu
 if st.button("Generate Consent Message"):
     course_code, combined_major, student_name, instructor_name, consent_tone = analyzing_info(user_input)
 
-    if not all([course_code, combined_major, student_name, instructor_name, consent_tone]):
-        st.error("Bazı bilgiler eksik tespit edildi. Lütfen metni daha açık yaz.")
+    st.write(f"**Course Code:** {course_code}")
+    st.write(f"**Major:** {combined_major}")
+    st.write(f"**Student Name:** {student_name}")
+    st.write(f"**Instructor Name:** {instructor_name}")
+    st.write(f"**Consent Tone:** {consent_tone}")
+
+    missing_fields = []
+    if not course_code:
+        missing_fields.append("Course Code")
+    if not combined_major:
+        missing_fields.append("Major")
+    if not student_name:
+        missing_fields.append("Student Name")
+    if not instructor_name:
+        missing_fields.append("Instructor Name")
+    if not consent_tone:
+        missing_fields.append("Consent Tone")
+
+    if missing_fields:
+        st.error(f"Eksik bilgiler tespit edildi: {', '.join(missing_fields)}. Lütfen metni daha açık yaz.")
     else:
         final_message = generate_consent(
             course_code=course_code,
