@@ -115,7 +115,7 @@ def generate_consent(course_code, combined_major, student_name, instructor_name,
     final_message=re.sub("\[ studentname \]",student_name,final_message)
     final_message=re.sub("</s>","",final_message)
     final_message=re.sub(r"[ ]+,","",final_message)
-    final_message=re.sub(r" {2,}","",final_message)
+    final_message=re.sub(r"[ ]{2,}","",final_message)
     final_message=re.sub(r" +"," ",final_message)
     final_message=re.sub(r" +\.",". ",final_message)
     final_message=re.sub(r" +"," ",final_message)
