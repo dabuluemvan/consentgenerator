@@ -101,6 +101,7 @@ def generate_consent(course_code, combined_major, student_name, instructor_name,
         regards = f.read().splitlines()
     greeting_final=random.choice(greetings)
     regard_final=random.choice(regards)
+    final_message=f"{greeting_final},\n{final_message}\n {regard_final}"
     final_message=re.sub("<s>","",final_message)
     final_message=re.sub("\[Instructor Name\]",instructor_name,final_message)
     final_message=re.sub("\[InstructorName\]",instructor_name,final_message)
@@ -124,5 +125,5 @@ def generate_consent(course_code, combined_major, student_name, instructor_name,
         all_chars[i+2]=all_chars[i+2].upper()
     all_chars[0]=all_chars[0].upper()
     final_message="".join(all_chars)
-    final_message=f"{greeting_final},\n{final_message}\n {regard_final}"
+    
     return final_message
