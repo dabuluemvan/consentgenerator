@@ -1,0 +1,78 @@
+[Greetings],
+Bu dersi almak istiyorum çünkü Boğaziçi’nin çeşitliliğinden ve imkanlarından yararlanmak istiyorum. Sizin dersiniz de fikrimce hedefime en uygun derslerden biri. [Regards].
+
+[Greetings],bu konu hakkında bilinç kazanmak istiyorum ve sizin özgün anlatım biçiminizin bana çok uyacağını düşünüyorum. [Regards]
+
+[Greetings],
+Bu dersi özellikle sizden almak istiyorum çünkü sizden daha önce ders almış olan arkadaşlarım sizi öve öve bitiremediler ve olur da ileride sizden başka ders alamazsam, sizden ders almadan mezun olmuş olmak istemiyorum. [Regards]
+
+[Greetings], ben [Major] bölümünden [StudentName]. Bu dönem [CurrentCourseCode] dersinizi almak istiyorum. Arkadaşımdan dersinizle ilgili çok güzel şeyler duydum. Bu dersin akademik olarak bana çok şey katacağını ve kendi bölümümden farklı bir alanı tanıma fırsatı vereceğini düşünüyorum. [Regards]
+
+[Greetings], dersinizi almayı çok istiyorum, bu konuya ilgiliyim.  Arkadaşlarıma sorduğumda da çok güzel dönütler aldım. Sınıfınıza kabul ederseniz çok mutlu olurum. Ayrıca, bu seçmeli derse ihtiyacım var. [Regards]
+
+[Greetings],
+Bu dersi almadan bölümden mezun olmak istemediğimi özellikle belirtmek isterim. Dersin hem keyifli bir öğrenme ortamı sunacağını hem de bana önemli katkılar sağlayacağını düşünüyorum. Umarım dönem başladığında derste görüşürüz. [Regards]
+
+[Greetings],
+Daha önce sizden aldığım derslerden hem içerik hem de ders işleyişi açısından oldukça fayda sağlamıştım. Dersin kolay olmadığının, düzenli çalışma ve derse katılım gerektirdiğinin farkındayım fakat kendime güveniyorum. [Regards].
+
+[Greetings],
+Ben daha önce sizin başka bir dersinizi almıştım, çok keyifli geçmişti. Bu sefer de bu dersinizi almak istiyorum. Consent verirseniz çok memnun olurum
+
+[Greetings],
+Geçen sene bu dersi alan arkadaşlarım sizi çok övüyor. Ben de sizden ders almak istiyorum. Kabul ederseniz sevinirim.
+[Regards]
+
+[Greetings],
+Hocam sizden hiç ders almadan mezun olmak istemiyorum. Herkesten sizin hakkınızda büyük övgüler duydum ve ben de deneyimlemek istiyorum.
+[CourseContent]'e çok ilgiliyim. Lütfen kabul edin.
+[Regards]
+
+[Greetings],
+Daha önce sizden ders alanlar çok övüyor sizi. [CurrentCourseCode] en iyi siz veriyormuşsunuz. Ben de sizden almak istiyorum. Umarım beni de layık görürsünüz bu derse.
+[Regards]
+
+[Greetings],
+Hocam geçen sene bu dersi almam gerekirken siz vermiyorsunuz diye almadım. Özellikle sizden almak istiyorum bu dersi. Siz okulumuzdaki en iyi hocasınız bence.
+[Regards]
+
+[Greetings],
+Bu dersi sizin anlatımınızla almak istiyorum. Önceki dönemlerde sizden ders alan birçok arkadaşım sizi önerdi. Sınıfınızda yer varsa çok mutlu olurum.
+[Regards]
+
+[Greetings],
+Sizinle ders yapma fırsatını kaçırmak istemiyorum. Eğer sınıfınızda yer varsa dersinize katılmak isterim. Derste en iyi performansımı göstermeye çalışacağım. Şimdiden teşekkürler.
+[Regards]
+
+[Greetings],
+Geçen dönem sizden aldığım ders çok verimliydi. Bu dönem de [CurrentCourseCode] dersinizle devam etmek isterim.
+[Regards]
+
+[Greetings] [InstructorName],
+Dersinizin içeriği ve anlatım tarzınız beni çok etkiliyor. Bu nedenle [CurrentCourseCode] dersinizi özellikle sizden almak istiyorum.
+[Regards]
+
+[Greetings],
+[CurrentCourseCode] dersi sizin anlatımınızla çok daha öğretici ve verimli olacaktır. Katılıma ve sorumluluklarıma önem verdiğimi belirtmek isterim.
+[Regards]
+
+[Greetings] okulda bu dersi sizin kadar iyi anlatan başka bir hoca yok, bu dersi sizden almaktan memnuniyet duyarım. [Regards]
+
+[Greetings] hocam ders anlatımınıza aşığım resmen bu dersi sizin verdiğinizi gördüğüm anda çok heyecanlandım. Consentimi kabul ederseniz sevinirim.
+
+[Greetings] okuldaki imkanları sonuna kadar değerlendirmek istiyorum ve bence bu okulu bu kadar iyi yapan şey siz ve verdiğiniz dersler. Öğrenciniz olmaktan gurur duyarım.
+[Regards]
+
+[Greetings], okulun en iyi hocalarından birisiniz. Bu okulda okuyarak sizden ders alma şansı değerlendirmek istiyorum. [Regards]
+
+[Greetings], daha önce sizden ders almış biri olarak yine dersinize katılmak istiyorum.
+[Regards]
+
+[Greetings], sizden ders almak benim için büyük bir ayrıcalık olur. [Regards]
+
+[Greetings], bu dersi özellikle sizden almak istiyorum çünkü herkes derslerinizi çok övüyor.
+[Regards]
+
+[Greetings], önceki dönemlerdeki ders anlatımınız hakkında çok olumlu yorumlar duydum. O yüzden sizden bir ders almadan mezun olmak istemiyorum. [Regards]
+
+[Greetings], sınıfınızda olmak bana çok şey katacaktır, buna inanıyorum. Daha önce dersinizi alan arkadaşlarım çok memnun kalmış. Ben de bu şansı istiyorum. [Regards]

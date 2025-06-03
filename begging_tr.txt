@@ -1,0 +1,139 @@
+[Greetings],
+Sizin sectionınız diğer derslerime en uyanı, başka section alırsan ders kaçırma ihtimalim var, verirseniz çok iyi olur, [Regards] 
+
+[Greetings], kotanızın sınırlı olduğunu biliyorum ancak bu dersi almam gelecek dönemki ders yükümü hafifleteceğinden programıma eklemek istiyorum. Beni dersinize kabul eder misiniz?
+[Regards].
+
+[Greetings],
+[CurrentCourseCode]dersleri arasında programımda çakışma yapmayan tek session sizinki olduğu için consent atıyorum. Kabul ederseniz çok sevinirim,
+[Regards]
+
+Hocam, açıkçası bu derse ihtiyacım var. Sorumluluk sahibi bir öğrenci olduğumun garantisini verebilirim, bütün derslere gösterdiğim hassasiyeti dersinize de göstereceğimden emin olabilirsiniz. Kabul ederseniz çok sevinirim.
+
+[Greetings],
+[CurrentCourseCode] seçenekleri arasından programıma en uygun olan derslerden biri bu. Son dönemim olduğu için bu dersi almaya ihtiyacım var.
+[Regards]
+
+hocam nolur verin artık 4 senedir alamıyorum bu dersi okulumu bitirmem lazım. Yanınıza geldim, mail attım olmuyor olmuyor verin artık hocam şu dersi. 
+
+Yalvarırım bu dersi almama izin verin hocam
+
+Dersinizi almayı çok isterim, [Regards]
+
+[Greetings],
+Hem bir [Major] öğrencisi olarak gözlem yapabilmek, hem de dil öğrenebilmek için dersinizin bu section’ını almam şart. Lütfen beni dersinize kabul edin. [Regards]
+
+[Greetings],
+Normalde geçen sene almam gereken bu dersi çakışmalar ve kredi limiti sebebiyle maalesef alamamıştım. Artık başka alttan dersim kalmasın istiyorum. Lütfen beni dersinize kabul edin. [Regards]
+
+[Greetings],
+Normalde bize zorunlu olan bu dersi ben bu dönem almak istiyorum çünkü bu dönem alamadığım bazı zorunlu dersler olduğu için sonraki dönemler yoğunluk yaşamak istemiyorum. Lütfen beni dersinize kabul edin, okulumun uzamasından çok korkuyorum :( [Regards]
+
+[Greetings],
+Bu dönem almamın zorunlu olduğu bu dersin bu section’ı haricinde hiçbir section programıma uymuyor. [Regards]
+
+[Greetings],
+Bu dersi şimdiden almak istiyorum çünkü alttan almam gereken bazı derslerimi çakışmalardan ötürü alamıyorum. Bu dersi de hazır programıma uyuyorken şimdiden almak istiyorum ki seneye alttan alacağım derslerin çakışma ihtimali azalsın. [Regards]
+
+[Greetings] bu derse çok ihtiyacım var lütfen kabul edin
+
+[Greetings],
+Hocam bu ders zorunlu dersim Quick addi kaçırdım. Bu dönem almam gerekiyor yoksa curriculumda geriye düşüyorum.
+[Regards]
+
+[Greetings],
+Hocam lütfen consent verir misiniz? Zorunlu dersim bu ve almadan mezun olamayacağım. [CourseContent] ilgiliyim. Derslerin hepsine geleceğim hepsine katılacağım. Lütfen kabul edin.
+[Regards]
+
+[Greetings],
+Bu dönem seçmeli almam gerekiyor ve saatleri çakışmayan tek ders bu. Kabul eder misiniz lütfen?
+[Regards]
+
+[Greetings],
+Lütfen Lütfen Lütfen kabul eder misiniz. Gerçekten ihtiyacım var bu derse başka hiçbir section uymuyor hocam. Lütfen.
+[Regards]
+
+[Greetings],
+Hocam nolur kabul edin. Alamazsam undercredit kalacağım. Tek uyan ders bu.
+[Regards]
+
+[Greetings],
+Hocam bu dönem alabileceğim tüm derslere baktım alabileceğim tek ders bu. Alamazsam mezun olamıyorum lütfen kabul edin.
+[Regards]
+
+[Greetings]
+Bu dönem bir seçmeli almak zorundayım ve diğer tüm sectionlarda çakışmam var. Sabah akşam dersinize çalışırım.
+[Regards]
+
+[Greetings],
+[Major] öğrencisiyim. Bu ders zorunlu dersim lütfen kabul edin. Saat 10.00 ilk size atıyorum hocam bu dersi almam gerekiyor.
+[Regards]
+
+[Greetings],
+Hocam quick addi kaçırdım lütfen kabul edin. Gerçekten hiçbir başka ders uymuyor programıma. Advisorum çakışmalara izin vermiyor ve tek uyan bu section. Nolur kabul edin.
+[Regards]
+
+[Greetings] [InstructorName],
+Programıma en uygun olan [CurrentCourseCode] dersi sizin section’ınız. Bu derse gerçekten çok ihtiyacım var. Anlayışınızı bekliyorum.
+[Regards]
+
+[Greetings] [InstructorName],
+[CurrentCourseCode] dersi, program yoğunluğumu dengelemem açısından çok önemli. Bu dönem almazsam mezuniyet planım aksayacak. Kabul ederseniz çok sevinirim.
+[Regards]
+
+[Greetings],
+Açıkçası bu dersi almam gerek. Çok ilgiliyim ve aktif bir öğrenci olduğumu garanti edebilirim. Sınıfınıza dahil ederseniz çok memnun olurum.
+[Regards]].
+
+[Greetings],
+Section’ınız programıma en uygun olan. Bu dönem başka bir zaman diliminde bu dersi alamıyorum. İzninizi rica ediyorum.
+[Regards]
+
+[Greetings] [InstructorName],
+Biliyorum kontenjan dolu olabilir ama yine de şansımı denemek istedim. [CurrentCourseCode] dersi sizinle çok verimli geçecektir.
+[Regards]
+
+[Greetings],
+Bu seçmeli dersi almak, ders planımı dengelemek açısından önemli. Umarım bu dönem sizinle çalışma şansı bulabilirim.
+[Regards]
+
+[Greetings],
+Bu dersi birkaç dönemdir programıma uydurmaya çalışıyorum. Bu dönem uyduğu için çok mutluyum. Eğer uygun görürseniz sınıfınıza katılmak isterim.
+[Regards]
+
+[Greetings], kredim yetmiyor lütfen bu derse çok ihtiyacım var izin verin alayım. [Regards]
+
+hocam yalvarırım nolur izin verin alayım şu dersi nolur artık lütfen çok ihtiyacım var kredim yetmiyor.
+
+[Greetings],
+bu dersi almam gerek undercredit kalıyorum lütfen başka ders programıma uymuyor :(
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
