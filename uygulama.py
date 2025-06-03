@@ -1,6 +1,6 @@
 import streamlit as st
-from _360regex import analyzing_info
-from _360gerisi import generate_consent
+from regex360 import analyzing_info
+from gerisi360 import generate_consent
 st.title="Consent Message Generator"
 user_input=input("O istediğin dersi almak üzeresin ama önce consentini oluşturmak için birkaç bilgiye ihtiyacımız var: \nLütfen ismini, bölümünü, almak istediğin dersi ve hocasını belirt. Ardından consentinin tonunu veya dilini seç. (yalvaran, ilgili, övgülü ya da ingilizce) Gerisi bizde! \n")
 if st.button("Generate Consent Message"):
