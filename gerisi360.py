@@ -3,7 +3,7 @@ import random
 import numpy as np
 import re
 
-def generate_consent(course_code, combined_major, student_name, instructor_name, consent_tone, start_context=("coursecontent", "]"), max_length=300):
+def generate_consent(course_code, combined_major, student_name, instructor_name, consent_tone, start_context=("]", ","), max_length=300):
     if consent_tone == "interested" or consent_tone == "ilgili":
         with open('interested_tr.txt', 'r', encoding='utf-8') as f:
             tone_raw = f.read()
