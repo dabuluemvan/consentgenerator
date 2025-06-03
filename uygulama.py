@@ -39,4 +39,4 @@ if st.button("Generate Consent Message"):
             start_context=("]", ",")
         )
         st.subheader("Generated Consent Message")
-        st.write(final_message)
+        st.text(final_message)
