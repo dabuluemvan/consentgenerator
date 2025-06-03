@@ -16,7 +16,6 @@ def generate_consent(course_code, combined_major, student_name, instructor_name,
     elif consent_tone == "english" or consent_tone == "ingilizce":
         with open('tone_eng.txt', 'r', encoding='utf-8') as f:
             tone_raw = f.read()
-    nltk.download("punk_tab")
     tone_sents = nltk.sent_tokenize(tone_raw)
     tone_sents_tokenized = [nltk.word_tokenize(s) for s in tone_sents]
 
