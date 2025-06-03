@@ -1,12 +1,12 @@
 import re
 
 departments = {
-    "Bilgisayar ve Öðretim Teknolojileri Eðitimi" : "Computer Education and Educational Technology",
-    "Eðitim Bilimleri" : "Educational Sciences",
-    "Temel Eðitim" : "Primary education",
-    "Matematik ve Fen Bilimleri Eðitimi" : "Mathematics and Science Education",
-    "Yabancý Diller Eðitimi" : "Foreign Language Education",
-    "Batý Dilleri ve Edebiyatlarý" : "Western Languages and Literatures",
+    "Bilgisayar ve Öğretim Teknolojileri Eğitimi" : "Computer Education and Educational Technology",
+    "Eğitim Bilimleri" : "Educational Sciences",
+    "Temel Eğitim" : "Primary education",
+    "Matematik ve Fen Bilimleri Eğitimi" : "Mathematics and Science Education",
+    "Yabancı Diller Eğitimi" : "Foreign Language Education",
+    "Batı Dilleri ve Edebiyatları" : "Western Languages and Literatures",
     "Çeviribilimi" : "Translation and Interpreting Studies",
     "Dilbilimi" : "Linguistics",
     "Felsefe" : "Philosophy",
@@ -17,33 +17,33 @@ departments = {
     "Psikoloji" :"Psychology",
     "Sosyoloji" :"Sociology",
     "Tarih" : "History",
-    "Türk Dili ve Edebiyatý" :"Turkish Language and Literature",
-    "Ýktisat" : "Economics",
-    "Ýþletme" : "Management",
-    "Siyaset Bilimi ve Uluslararasý Ýliþkiler" : "Political Science and International Relations",
-    "Bilgisayar Mühendisliði" :"Computer Engineering",
-    "Elektrik-Elektronik Mühendisliði" : "Electrical and Electronic Engineering",
-    "Endüstri Mühendisliði" : "Industrial Engineering",
-    "Ýnþaat Mühendisliði" : "Civil Engineering",
-    "Kimya Mühendisliði" : "Chemical Engineering",
-    "Makina Mühendisliði" : "Mechanical Engineering",
-    "Turizm Ýþletmeciliði" : "Tourism Administration",
-    "Uluslararasý Ticaret" : "International Trade",
-    "Yönetim Biliþim Sistemleri" : "Management Information Systems"
+    "Türk Dili ve Edebiyatı" :"Turkish Language and Literature",
+    "İktisat" : "Economics",
+    "İşletme" : "Management",
+    "Siyaset Bilimi ve Uluslararası İlişkiler" : "Political Science and International Relations",
+    "Bilgisayar Mühendisliği" :"Computer Engineering",
+    "Elektrik-Elektronik Mühendisliği" : "Electrical and Electronic Engineering",
+    "Endüstri Mühendisliği" : "Industrial Engineering",
+    "İnşaat Mühendisliği" : "Civil Engineering",
+    "Kimya Mühendisliği" : "Chemical Engineering",
+    "Makina Mühendisliği" : "Mechanical Engineering",
+    "Turizm İşletmeciliği" : "Tourism Administration",
+    "Uluslararası Ticaret" : "International Trade",
+    "Yönetim Bilişim Sistemleri" : "Management Information Systems"
 }
 
 def translate_class(turkish_class):
     turkish_class = turkish_class.lower()
     mapping = {
-        "1. sýnýf": "1st year",
-        "birinci sýnýf": "1st year",
-        "2. sýnýf": "2nd year",
-        "ikinci sýnýf": "2nd year",
-        "3. sýnýf": "3rd year",
-        "üçüncü sýnýf": "3rd year",
-        "4. sýnýf": "4th year",
-        "dördüncü sýnýf": "4th year",
-        "son sýnýf": "final year"
+        "1. sınıf": "1st year",
+        "birinci sınıf": "1st year",
+        "2. sınıf": "2nd year",
+        "ikinci sınıf": "2nd year",
+        "3. sınıf": "3rd year",
+        "üçüncü sınıf": "3rd year",
+        "4. sınıf": "4th year",
+        "dördüncü sınıf": "4th year",
+        "son sınıf": "final year"
     }
     return mapping.get(turkish_class, "")
 
@@ -52,7 +52,7 @@ def analyzing_info(user_input):
     course_code_match = re.findall(r'\b[A-Z]+\.?[0-9]+[A-Z]?\b', user_input)
     course_code = course_code_match[0] if course_code_match else ""
 
-    student_class_match = re.findall(r'\b(\d\. sýnýf|birinci sýnýf|ikinci sýnýf|üçüncü sýnýf|dördüncü sýnýf|son sýnýf)\b', user_input.lower())
+    student_class_match = re.findall(r'\b(\d\. sınıf|birinci sınıf|ikinci sınıf|üçüncü sınıf|dördüncü sınıf|son sınıf)\b', user_input.lower())
     student_class = student_class_match[0] if student_class_match else ""
 
     words = user_input.split()
@@ -65,11 +65,11 @@ def analyzing_info(user_input):
     major_turkish = potential_majors[0] if potential_majors else ""
 
     user_input_without_major = user_input.replace(major_turkish, '') if major_turkish else user_input
-    names = re.findall(r'\b([A-ZÇÖÝÞÜÐ][a-zýðüþöç]+(?: [A-ZÇÖÝÞÜÐ][a-zýðüþöç]+)+)', user_input_without_major)
+    names = re.findall(r'\b([A-ZÇÖİŞÜĞ][a-zığüşöç]+(?: [A-ZÇÖİŞÜĞ][a-zığüşöç]+)+)', user_input_without_major)
     student_name = names[0] if len(names) >= 1 else ""
     instructor_name = names[1] if len(names) >= 2 else ""
 
-    tone_match = re.search(r'\b([a-zA-ZçöþüðýÐÜÞÝÖÇ]+)\s+(tonda|þekilde|consent)\b', user_input.lower())
+    tone_match = re.search(r'\b([a-zA-ZçöşüğıĞÜŞİÖÇ]+)\s+(tonda|şekilde|consent)\b', user_input.lower())
     consent_tone = tone_match.group(1) if tone_match else ""
 
     if consent_tone.lower() == "ingilizce":
@@ -80,3 +80,4 @@ def analyzing_info(user_input):
         combined_major = f"{student_class} {major_turkish}".strip()
 
     return course_code, combined_major, student_name, instructor_name, consent_tone
+
