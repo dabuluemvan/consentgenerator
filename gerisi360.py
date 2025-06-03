@@ -79,25 +79,51 @@ def generate_consent(course_code, combined_major, student_name, instructor_name,
             generated_words[i] = "konusuna"
         if generated_words[i] == "konusu" and generated_words[i+1] in accusative:
             generated_words[i] = "konusunu"
-
-    final_message = " ".join(generated_words)
-
-    if consent_tone == "english" or consent_tone == "ingilizce":
-        with open("eng_greetings.txt", "r", encoding="utf-8") as f:
-            greetings = f.read().splitlines()
-        with open("eng_regards.txt", "r", encoding="utf-8") as f:
-            regards = f.read().splitlines()
+final_message=" ".join(generated_words)
+    final_message=re.sub("\[ greetings \]","",final_message)
+    final_message=re.sub("\[ regards \]","",final_message)
+    final_message=re.sub("\[Instructor Name\]","",final_message)
+    final_message=re.sub("\[InstructorName\]","",final_message)
+    final_message=re.sub("\[instructor name\]","",final_message)
+    final_message=re.sub("\[ instructorname \]","",final_message)
+    all_chars_before=list(final_message)
+    all_chars_before[0]=all_chars_before[0].upper()
+    final_message="".join(all_chars_before)
+    final_message=f"[Greetings],\n {final_message} \n [Regards]"
+    if consent_tone=="english" or consent_tone=="ingilizce":
+      with open("/content/eng_greetings.txt", "r", encoding="utf-8") as f:
+        greetings = f.read().splitlines()
+      with open("/content/eng_regards.txt", "r", encoding="utf-8") as f:
+        regards = f.read().splitlines()
     else:
-        with open("tr_greetings.txt", "r", encoding="utf-8") as f:
-            greetings = f.read().splitlines()
-        with open("tr_regards.txt", "r", encoding="utf-8") as f:
-            regards = f.read().splitlines()
-
-    greeting_final = random.choice(greetings)
-    regard_final = random.choice(regards)
-
-    final_message = f"{greeting_final},\n{final_message}\n{regard_final}"
-    final_message = final_message.replace("<s>", "").replace("</s>", "")
-    final_message = re.sub(r"\s+", " ", final_message).strip()
-    final_message = final_message[0].upper() + final_message[1:]
+      with open("/content/tr_greetings.txt", "r", encoding="utf-8") as f:
+        greetings = f.read().splitlines()
+      with open("/content/tr_regards.txt", "r", encoding="utf-8") as f:
+        regards = f.read().splitlines()
+    greeting_final=random.choice(greetings)
+    regard_final=random.choice(regards)
+    final_message=re.sub("\[Greetings\]",greeting_final,final_message)
+    final_message=re.sub("\[Regards\]",regard_final,final_message)
+    final_message=re.sub("<s>","",final_message)
+    final_message=re.sub("\[Instructor Name\]",instructor_name,final_message)
+    final_message=re.sub("\[InstructorName\]",instructor_name,final_message)
+    final_message=re.sub("\[instructor name\]",instructor_name,final_message)
+    final_message=re.sub("\[ instructorname \]",instructor_name,final_message)
+    final_message=re.sub("\[ currentcoursecode \]",course_code,final_message)
+    final_message=re.sub("\[ currenycoursecode \]",course_code,final_message)
+    final_message=re.sub("\[ major \]",combined_major,final_message)
+    final_message=re.sub("\[ studentname \]",student_name,final_message)
+    final_message=re.sub("</s>","",final_message)
+    final_message=re.sub(r" +,","",final_message)
+    final_message=re.sub(r" {2,}","",final_message)
+    final_message=re.sub(r" +"," ",final_message)
+    final_message=re.sub(r" +\.",". ",final_message)
+    final_message=re.sub(r" +"," ",final_message)
+    final_message=re.sub(" ’ ","’",final_message)
+    all_chars=list(final_message)
+    for i in range(len(all_chars)-2):
+      if all_chars[i]==".":
+        all_chars[i+2]=all_chars[i+2].upper()
+    all_chars[0]=all_chars[0].upper()
+    final_message="".join(all_chars)
     return final_message
