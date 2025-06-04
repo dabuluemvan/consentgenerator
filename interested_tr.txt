@@ -25,7 +25,7 @@ Bölümü seçmekteki amacım gelecekte [CourseContent] alanında bir kariyer ed
 [Greetings],
 [Major] öğrencisiyim. Hazırladığım en iyi curriculuma göre [CurrentCourseCode] dersini bu dönem almam benim için en uygunu oluyor. İlgili olduğum [CourseContent] sizden dinlemenin benim için çok keyifli olacağını düşünüyorum. Beni dersinize kabul ederseniz çok sevinirim. [Regards].
 
-[Greetings], [Major]bölümünden [StudentName]. Bu dönem [CurrentCourseCode] dersinizi almak istiyorum. Bu dersin beni akademik açıdan geliştireceğini düşünüyorum. [Regards], [StudentName].
+[Greetings], [Major] bölümünden [StudentName]. Bu dönem [CurrentCourseCode] dersinizi almak istiyorum. Bu dersin beni akademik açıdan geliştireceğini düşünüyorum. [Regards], [StudentName].
 
 [Greetings],
 [CourseContent] ilgiliyim hocam. Lisede [CourseContent] hakkında araştırma yapmıştım. Şimdi sonunda bunun dersini alma fırsatım var. Lütfen kabul eder misiniz?
@@ -105,9 +105,43 @@ Bu ders sayesinde [CourseContent] alanında gelişmek istiyorum. Zaten daha önc
 
 [Greetings], [CourseContent] ilgi alanım ve bu ders bunun için harika bir başlangıç olur. Bölüm dışı da olsa bu alanda gelişmek istiyorum. [Regards]
 
+[Greetings],
+Dersinizin içeriği akademik olarak oldukça dikkatimi çekiyor. Bu dönem programıma da uyduğu için sizin section’ınızdan almak istiyorum. Uygun görürseniz memnun olurum.
+[Regards]
 
+[Greetings],
+[CourseContent] konusu ile ilgileniyorum ve bu dersi sizden almanın katkı sağlayacağını düşünüyorum. Dersiniz programıma da uygun olduğu için katılmak istiyorum.
+[Regards]
 
+[Greetings],
+Dersin konusuna duyduğum ilgi nedeniyle [CurrentCourseCode] dersinizi almak istiyorum. Aynı zamanda programıma da uyuyor. Onay verirseniz sevinirim.
+[Regards]
 
+[Greetings],
+[CurrentCourseCode] dersinin içeriği oldukça ilgi çekici. Bu konuyu daha derinlemesine öğrenmek istiyorum. Ders programım da uygun olduğu için katılmak isterim.
+[Regards]
 
+[Greetings],
+Dersinizin işlediği konulara duyduğum akademik ilgi nedeniyle [CurrentCourseCode] dersinize katılmak istiyorum. Uygun görürseniz consent verir misiniz?
+[Regards]
 
+[Greetings],
+[CourseContent] konusu ilgi alanlarımdan biri. Bu dersi sizden almanın benim için verimli olacağını düşünüyorum. Katılma izni verirseniz çok memnun olurum.
+[Regards]
+
+[Greetings],
+Dersinizin içeriğiyle daha önce bireysel olarak ilgilenmiştim. Bu dönem akademik olarak daha derinlemesine öğrenmek istiyorum. Katılmam için izin verir misiniz?
+[Regards]
+
+[Greetings],
+[CurrentCourseCode] dersini almak istiyorum çünkü konusu hem güncel hem de ilgi çekici. Programıma da uygun olduğu için sizin section’ınızı tercih ediyorum.
+[Regards]
+
+[Greetings],
+Dersinizin içeriği uzun süredir ilgilendiğim konular arasında yer alıyor. Bu dönem uygun bir fırsat olduğu için sizden almak istiyorum.
+[Regards]
+
+[Greetings],
+[CourseContent] konusuna duyduğum ilgi nedeniyle [CurrentCourseCode] dersinizi almak istiyorum. Uygun görürseniz sınıfınıza katılmak isterim.
+[Regards]
 
