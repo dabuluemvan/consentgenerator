@@ -48,4 +48,4 @@ if st.button("Generate Consent Message"):
 
         st.markdown("---")
         st.subheader("You can rate this message here:")
-        st.markdown(f"[Bu mesajı değerlendir (form linki)]({form_url})", unsafe_allow_html=True)
+        st.markdown(f"[Please rate this generated message]({form_url})", unsafe_allow_html=True)
