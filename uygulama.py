@@ -44,7 +44,8 @@ if st.button("Generate Consent Message"):
         st.text(final_message)
         import urllib.parse
         message_encoded = urllib.parse.quote(final_message)
-        form_url = f"https://docs.google.com/forms/d/e/1FAIpQLScs_sCfGbcAYs29-jsLrylKhvjiLkmhnZXJtjLwgnHqiwCbLQ/viewform?usp=pp_url&entry.1296366933={message_encoded}"
+        message_encoded_ton = urllib.parse.quote(consent_tone)
+        form_url = f"https://docs.google.com/forms/d/e/1FAIpQLScs_sCfGbcAYs29-jsLrylKhvjiLkmhnZXJtjLwgnHqiwCbLQ/viewform?usp=pp_url&entry.1579423536={message_encoded_ton}&entry.1296366933={message_encoded}"
 
         st.markdown("---")
         st.subheader("You can rate this message here:")
