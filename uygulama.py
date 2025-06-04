@@ -42,10 +42,10 @@ if st.button("Generate Consent Message"):
         )
         st.subheader("Generated Consent Message")
         st.text(final_message)
+        import urllib.parse
+        message_encoded = urllib.parse.quote(final_message)
+        form_url = f"https://docs.google.com/forms/d/e/1FAIpQLScs_sCfGbcAYs29-jsLrylKhvjiLkmhnZXJtjLwgnHqiwCbLQ/viewform?usp=pp_url&entry.1296366933={message_encoded}"
+
         st.markdown("---")
-        st.subheader("You can rate this message here.")
-        components.iframe(
-        src='https://docs.google.com/forms/d/e/1FAIpQLScs_sCfGbcAYs29-jsLrylKhvjiLkmhnZXJtjLwgnHqiwCbLQ/viewform?embedded=true" width="640" height="424" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>',
-        height=800,
-        scrolling=True
-        )
+        st.subheader("You can rate this message here:")
+        st.markdown(f"[Bu mesajı değerlendir (form linki)]({form_url})", unsafe_allow_html=True)
