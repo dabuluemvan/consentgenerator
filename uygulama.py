@@ -1,6 +1,8 @@
 import streamlit as st
 from regex360 import analyzing_info
 from gerisi360 import generate_consent
+import streamlit.components.v1 as components
+
 
 st.title("Consent Message Generator")
 
@@ -40,11 +42,10 @@ if st.button("Generate Consent Message"):
         )
         st.subheader("Generated Consent Message")
         st.text(final_message)
-import streamlit.components.v1 as components
-st.markdown("---")
-st.subheader("You can rate this message here.")
-components.iframe(
-src='https://docs.google.com/forms/d/e/1FAIpQLScs_sCfGbcAYs29-jsLrylKhvjiLkmhnZXJtjLwgnHqiwCbLQ/viewform?embedded=true" width="640" height="424" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>',
-height=800,
-scrolling=True
-)
+        st.markdown("---")
+        st.subheader("You can rate this message here.")
+        components.iframe(
+        src='https://docs.google.com/forms/d/e/1FAIpQLScs_sCfGbcAYs29-jsLrylKhvjiLkmhnZXJtjLwgnHqiwCbLQ/viewform?embedded=true" width="640" height="424" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>',
+        height=800,
+        scrolling=True
+        )
